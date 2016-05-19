@@ -1,0 +1,47 @@
+<html>
+	<head>
+	<!--
+	addChild(child)
+	addChildAt(child,index)
+	removeChild(child)
+	removeChildAt(index)
+	removeChildren()
+	swapChildren(child1,child2)
+	setParent(parent)
+	destroy()
+	getChildAt()
+	getChildIndex(child)
+	children - read only array of children
+
+	 -->
+		<title>Tickle the Aliens</title>
+	</head>
+	<body>
+		<h1>Tickle the Aliens</h1>
+		<div id="gameport"></div>
+		
+		<h1>Instructions</h1>
+		<h4>Click on as many aliens as you can in 15 seconds</h4>
+		<p>Start the game by pressing the button.
+		<p>
+		<button onclick="this.style.visibility='hidden'; setTimeout(finalscore,15000); counter = 0">
+		Begin! </button>
+
+
+		<h1>Comments</h1>
+
+		<div id="disqus_thread"></div>
+		<script>
+			(function() {
+				var d = document, s = d.createElement('script');
+				s.src = 'http://nau-cs413.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})(); 
+		</script>
+				
+		<script src="pixi.js"></script>
+		<script src="game.js"></script>
+
+	</body>
+</html>
